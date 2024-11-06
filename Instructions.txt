@@ -1,0 +1,32 @@
+Instructions for setting up and using the controller 
+
+before you start, you need Thonny, VSCode and Python installed on your computer
+
+In VSCode, open Client folder (File > Open Folder> Select 'Client' folder)
+
+Select extension on the left hand bar in VSCode
+
+Search for 'Live Server' and install it
+
+Go back to Explorer (top icon on left hand bar)
+
+Under Client, right-click 'index.html' and select 'Open with Live Server'
+
+This should open up the controller website.
+
+Switch over to the SBRT wifi. 
+
+The controller should now work. 
+
+To use the controller from your phone:
+Must have Python installed on your laptop.
+
+In VSCode, open Terminal from the top bar. Run this command:
+python -m http.server 8000
+
+get your IPv4 address by running <ipconfig> in the Command Prompt
+
+Connect your phone to the SBRT wifi. Type this address into your address bar: 
+
+http//[IPv4]:8000
+
