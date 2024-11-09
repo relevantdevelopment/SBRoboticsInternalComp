@@ -18,6 +18,7 @@ Motor3_in1, Motor3_in2 = Pin(26, Pin.OUT), Pin(22, Pin.OUT)
 
 PWM4 = PWM(Pin(19, Pin.OUT), freq=1000)
 Motor4_in1, Motor4_in2 = Pin(20, Pin.OUT), Pin(21, Pin.OUT)
+ 
 
 '''
 Motor Testing
@@ -108,10 +109,10 @@ async def index(request, ws):
             print(bRight)
 
             # Set power to motors using custom function
-            setMotorPower(fLeft, PWM1, Motor1_in1, Motor1_in2)
-            setMotorPower(fRight, PWM3, Motor3_in1, Motor3_in2)
-            setMotorPower(bLeft, PWM4, Motor4_in1, Motor4_in2)
-            setMotorPower(bRight, PWM2, Motor2_in1, Motor2_in2)
+            setMotorPower(fLeft, PWM2, Motor2_in1, Motor2_in2)
+            setMotorPower(fRight, PWM4, Motor4_in1, Motor4_in2)
+            setMotorPower(bLeft, PWM1, Motor1_in1, Motor1_in2)
+            setMotorPower(bRight, PWM3, Motor3_in1, Motor3_in2)
             
     except Exception as e:
         print(f"WebSocket error: {e}")

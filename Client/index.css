@@ -2,17 +2,17 @@ html, body {
     margin: 0; 
     height: 100vh; 
     overflow: hidden;
+    Background-color: #21aaf3;
 }
 
 /*grid tutrial: https://www.w3schools.com/css/css_grid.asp*/
 .grid-container {
     display: grid;
     grid-template-columns: auto auto auto;
-    Background-color: #2196F3;
-    padding: 10px;
+    padding: 2px;
 }
 .grid-item {
-    margin: 20px;
+    margin: 10px;
     place-self: center;
 }
 

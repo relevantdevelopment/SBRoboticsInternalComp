@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', async (event) => {
     let animationFrameId = null;
 
     // Initialize WebSocket connection
-    let socket = new WebSocket("ws://192.168.0.235/direction");
+    let socket = new WebSocket("ws://192.168.0.229/direction");
     /*
     socket.addEventListener("open", () => {
         socket.send("Hello Server!"); 
